@@ -1,0 +1,8 @@
+- name: Introduction
+  hosts: all
+  connection: local
+  become: true
+
+  roles:
+  - packages 
+  - users
