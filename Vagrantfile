@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "ansible_local" do |ansible|
     ansible.playbook = "playbooks/clone_roles.yml"
     ansible.extra_vars = {
-      git_repository: "https://github.com/kwaiga8/Ansible_roles_1.git",
+      git_repository: "https://github.com/kwaiga8/Vagrant_1.git",
       git_branch: "main"
     }
   end
