@@ -2,7 +2,7 @@
   hosts: all
   become: true
   roles:
-    - user
+    - users
     - packages
     - geerlingguy.docker
     - christiangda.awscli
