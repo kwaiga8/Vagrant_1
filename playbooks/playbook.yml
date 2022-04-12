@@ -1,8 +1,10 @@
-- name: Introduction
+- name: 
   hosts: all
-  connection: local
   become: true
-
   roles:
-  - packages 
-  - users
+    - user
+    - packages
+    - geerlingguy.docker
+    - christiangda.awscli
+    - christiangda.awscli_configure
+    - diodonfrost.terraform
